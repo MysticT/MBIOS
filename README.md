@@ -7,11 +7,11 @@ root and floppy disks.
 
 Installation
 ------------
-1-	Download the bios.lua file
-2-	Move the CC bios from /mods/ComputerCraft.zip/lua/bios.lua to
+1.	Download the bios.lua file
+2.	Move the CC bios from /mods/ComputerCraft.zip/lua/bios.lua to
 	/mods/ComputerCraft.zip/lua/rom/boot/CraftOS (this will allow
 	you to boot CraftOS)
-3-	Move the downloaded bios.lua to /mods/ComputerCraft/lua/bios.lua
+3.	Move the downloaded bios.lua to /mods/ComputerCraft/lua/bios.lua
 
 Configuration
 -------------
