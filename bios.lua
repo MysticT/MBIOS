@@ -17,6 +17,19 @@ local tDiskBootPaths = {
 -- Version string
 local sVersion = "MBIOS 1.1"
 
+-- Global functions
+
+local native_getmetatable
+function getmetatable(t)
+	if type(t) == "string" then
+		error("Attempt to access string metatable", 2)
+		return nil
+	end
+	return native_getmetatable(t)
+end
+
+-- Local functions
+
 -- clear function:
 -- clears the screen and sets the cursor to the top-left corner
 local function clear()
