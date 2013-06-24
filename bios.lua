@@ -19,7 +19,7 @@ local sVersion = "MBIOS 1.1"
 
 -- Global functions
 
-local native_getmetatable
+local native_getmetatable = getmetatable
 function getmetatable(t)
 	if type(t) == "string" then
 		error("Attempt to access string metatable", 2)
