@@ -17,15 +17,11 @@ local tDiskBootPaths = {
 -- Version string
 local sVersion = "MBIOS 1.1"
 
--- Global functions
+-- Protect string metatable
 
-local native_getmetatable = getmetatable
-function getmetatable(t)
-	if type(t) == "string" then
-		error("Attempt to access string metatable", 2)
-		return nil
-	end
-	return native_getmetatable(t)
+local strMeta = getmetatable("")
+if type(strMeta) == "table" then
+	strMeta.__metatable = "string"
 end
 
 -- Local functions
